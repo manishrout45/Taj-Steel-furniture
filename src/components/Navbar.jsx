@@ -4,29 +4,67 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
-  // Detect scroll
+  // Detect Scroll + Active Section
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+
+      const sections = ["home", "about", "services", "contact"];
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+
+        if (element) {
+          const rect = element.getBoundingClientRect();
+
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            setActiveSection(section);
+          }
+        }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Smooth Scroll Function
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+
+    setMobileOpen(false);
+  };
+
+  // Active Nav Style
+  const navClass = (section) =>
+    activeSection === section
+      ? "text-orange-500 relative after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-orange-500"
+      : "hover:text-orange-500 transition";
 
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-black/80 backdrop-blur-md  py-8 shadow-[0_8px_30px_rgba(255,115,0,0.25)]"
+          ? "bg-black/80 backdrop-blur-md py-8 shadow-[0_8px_30px_rgba(255,115,0,0.25)]"
           : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex justify-between items-center">
-
+        
         {/* Logo */}
-        <div className="flex items-center gap-2 cursor-pointer">
+        <div
+          className="flex items-center gap-2 cursor-pointer"
+          onClick={() => scrollToSection("home")}
+        >
           <img
             src="/assets/images/Logo.png"
             alt="Taj Steel Logo"
@@ -36,18 +74,35 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-white text-base font-light tracking-wide">
-          <a href="#" className="hover:text-orange-500 transition">
+
+          <button
+            onClick={() => scrollToSection("home")}
+            className={navClass("home")}
+          >
             Home
-          </a>
-          <a href="#" className="hover:text-orange-500 transition">
+          </button>
+
+          <button
+            onClick={() => scrollToSection("about")}
+            className={navClass("about")}
+          >
             About
-          </a>
-          <a href="#" className="hover:text-orange-500 transition">
+          </button>
+
+          <button
+            onClick={() => scrollToSection("services")}
+            className={navClass("services")}
+          >
             Services
-          </a>
-          <a href="#" className="hover:text-orange-500 transition">
+          </button>
+
+          <button
+            onClick={() => scrollToSection("contact")}
+            className={navClass("contact")}
+          >
             Contact
-          </a>
+          </button>
+
         </nav>
 
         {/* Mobile Hamburger */}
@@ -74,10 +129,35 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col items-center gap-8 mt-16 text-white text-lg">
-          <a href="#" onClick={() => setMobileOpen(false)}>Home</a>
-          <a href="#" onClick={() => setMobileOpen(false)}>About</a>
-          <a href="#" onClick={() => setMobileOpen(false)}>Services</a>
-          <a href="#" onClick={() => setMobileOpen(false)}>Contact</a>
+
+          <button
+            onClick={() => scrollToSection("home")}
+            className={navClass("home")}
+          >
+            Home
+          </button>
+
+          <button
+            onClick={() => scrollToSection("about")}
+            className={navClass("about")}
+          >
+            About
+          </button>
+
+          <button
+            onClick={() => scrollToSection("services")}
+            className={navClass("services")}
+          >
+            Services
+          </button>
+
+          <button
+            onClick={() => scrollToSection("contact")}
+            className={navClass("contact")}
+          >
+            Contact
+          </button>
+
         </div>
       </div>
     </header>

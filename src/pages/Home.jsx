@@ -29,7 +29,7 @@ const Home = () => {
         <WhyChooseUs />
       </section>
 
-      <section id="">
+      <section id="feature">
         <FurnitureHero />
       </section>
 

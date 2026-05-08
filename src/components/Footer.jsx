@@ -6,6 +6,18 @@ import {
 import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
 
 const Footer = () => {
+
+  // Smooth Scroll Function
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <footer className="bg-black text-white px-6 md:px-12 py-8">
       
@@ -16,7 +28,8 @@ const Footer = () => {
           <img
             src="/assets/images/Logo.png"
             alt="Taj Steel Furniture"
-            className="w-32 mb-4"
+            className="w-32 mb-4 cursor-pointer"
+            onClick={() => scrollToSection("home")}
           />
 
           <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
@@ -25,9 +38,21 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-4 text-lg">
-            <FaInstagram className="cursor-pointer hover:text-orange-500 transition duration-300" />
-            <FaFacebookF className="cursor-pointer hover:text-orange-500 transition duration-300" />
-            
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="cursor-pointer hover:text-orange-500 transition duration-300" />
+            </a>
+
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="cursor-pointer hover:text-orange-500 transition duration-300" />
+            </a>
           </div>
         </div>
 
@@ -36,21 +61,42 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
 
           <ul className="space-y-3 text-gray-400 text-sm">
-            <li className="hover:text-white cursor-pointer transition duration-300">
+
+            <li
+              onClick={() => scrollToSection("about")}
+              className="hover:text-white cursor-pointer transition duration-300"
+            >
               About Us
             </li>
-            <li className="hover:text-white cursor-pointer transition duration-300">
-              Our Products
+
+            <li
+              onClick={() => scrollToSection("whychoose")}
+              className="hover:text-white cursor-pointer transition duration-300"
+            >
+              FAQ
             </li>
-            <li className="hover:text-white cursor-pointer transition duration-300">
+
+            <li
+              onClick={() => scrollToSection("services")}
+              className="hover:text-white cursor-pointer transition duration-300"
+            >
               Services
             </li>
-            <li className="hover:text-white cursor-pointer transition duration-300">
-              Gallery
+
+            <li
+              onClick={() => scrollToSection("feature")}
+              className="hover:text-white cursor-pointer transition duration-300"
+            >
+              Features
             </li>
-            <li className="hover:text-white cursor-pointer transition duration-300">
+
+            <li
+              onClick={() => scrollToSection("contact")}
+              className="hover:text-white cursor-pointer transition duration-300"
+            >
               Contact
             </li>
+
           </ul>
         </div>
 
@@ -67,12 +113,22 @@ const Footer = () => {
 
             <div className="flex items-center gap-2">
               <MdPhone className="text-orange-500" />
-              <span>+91 98765 43210</span>
+              <a
+                href="tel:+919876543210"
+                className="hover:text-white transition duration-300"
+              >
+                +91 98765 43210
+              </a>
             </div>
 
             <div className="flex items-center gap-2">
               <MdEmail className="text-orange-500" />
-              <span>tajsteelfurniture@gmail.com</span>
+              <a
+                href="mailto:tajsteelfurniture@gmail.com"
+                className="hover:text-white transition duration-300"
+              >
+                tajsteelfurniture@gmail.com
+              </a>
             </div>
 
           </div>
@@ -89,12 +145,15 @@ const Footer = () => {
         <p>© {new Date().getFullYear()} Taj Steel Furniture</p>
 
         <div className="flex gap-6 mt-3 md:mt-0">
+
           <span className="hover:text-white cursor-pointer transition duration-300">
             Privacy
           </span>
+
           <span className="hover:text-white cursor-pointer transition duration-300">
             Terms
           </span>
+
         </div>
       </div>
 
