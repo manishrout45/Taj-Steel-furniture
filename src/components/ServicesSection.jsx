@@ -16,7 +16,7 @@ export default function ServicesSection() {
   const allProducts = {
     "Home Decoration": [
       {
-        img: "hhttps://img.magnific.com/premium-photo/black-metal-bed-frame-with-white-brick-wall-green-blanket_93675-188637.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",
+        img: "https://img.magnific.com/premium-photo/black-metal-bed-frame-with-ornate-headboard-tan-bedding_93675-192900.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",
         title: "Stylish Bed Frame",
       },
       {
