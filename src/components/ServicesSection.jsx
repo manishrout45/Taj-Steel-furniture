@@ -16,7 +16,7 @@ export default function ServicesSection() {
   const allProducts = {
     "Home Decoration": [
       {
-        img: "https://img.magnific.com/premium-photo/black-metal-bed-frame-with-ornate-headboard-tan-bedding_93675-192900.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",
+        img: "/assets/images/Bed.png",
         title: "Stylish Bed Frame",
       },
       {
@@ -28,7 +28,7 @@ export default function ServicesSection() {
         title: "Elegant Wooden Table",
       },
       {
-        img: "https://img.magnific.com/free-photo/blue-kitchen-cabinet-with-three-drawers-brass-knobs-color-mood_169016-71065.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",
+        img: "https://www.gomodern.co.uk/var/images/product/1200.863/GM-BOXX-04-3-large.jpg",
         title: "Luxury Wall Cabinet",
       },
       {
@@ -47,8 +47,8 @@ export default function ServicesSection() {
         title: "Executive Office Desk",
       },
       {
-        img: "https://img.magnific.com/free-photo/still-life-office-chair-indoors_23-2151108699.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",
-        title: "Premium Work Chair",
+        img: "/assets/images/OfficeSofa.png",
+        title: "Premium Sofa",
       },
       {
         img: "https://img.magnific.com/free-photo/business-meeting-room-office_1170-1950.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",

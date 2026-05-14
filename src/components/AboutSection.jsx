@@ -23,7 +23,6 @@ export default function AboutSection() {
 
               <h2 className="text-white font-serif text-3xl md:text-5xl leading-tight mb-5">
                 Premium Steel Furniture For
-                <br className="hidden md:block" />
                 Home, Office &amp; Commercial Use
               </h2>
 
@@ -45,7 +44,7 @@ export default function AboutSection() {
               viewport={{ once: true, amount: 0.2 }}
             >
               <img
-                src="https://img.magnific.com/premium-photo/space-empty-table-background_87720-85487.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80"
+                src="/assets/images/AboutImg1.png"
                 alt="steel furniture"
                 className="w-full h-[320px] sm:h-[450px] md:h-[580px] object-cover hover:scale-105 transition duration-700"
               />
@@ -69,7 +68,7 @@ export default function AboutSection() {
               viewport={{ once: true, amount: 0.2 }}
             >
               <img
-                src="https://img.magnific.com/premium-photo/view-empty-chairs_1599668-157.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80"
+                src="/assets/images/AboutImg2.png"
                 alt="modern furniture"
                 className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover hover:scale-105 transition duration-700"
               />

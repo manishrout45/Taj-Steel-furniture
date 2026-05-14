@@ -9,21 +9,21 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
   {
     image:
-      "https://img.magnific.com/free-photo/white-table-chairs-terrace-oia-santorini_268835-3504.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",
+      "/assets/images/Bed.png",
     subtitle: "TIMELESS ELEGANCE",
     title: "Discover Furniture's For Living",
     desc: "Exceptional furniture solutions blending elegance, comfort, and modern design.",
   },
   {
     image:
-      "https://img.magnific.com/premium-photo/stainless-steel-furniture-white-background_996135-45417.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",
+      "/assets/images/WhyChooseImg.png",
     subtitle: "MODERN INTERIORS",
     title: "Luxury Crafted For Your Home",
     desc: "Beautiful premium furniture collections curated for elegant spaces. Create warmth, comfort and timeless design in every corner of your living.",
   },
   {
     image:
-      "https://img.magnific.com/premium-photo/wooden-table-with-square-design_862994-510724.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80",
+      "/assets/images/HeroImg.png",
     subtitle: "DESIGN YOUR SPACE",
     title: "Furniture That Defines Lifestyle",
     desc: "Premium handpicked sofas, tables, lights and decor pieces that blend sophistication with comfort for modern homes.",

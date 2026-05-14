@@ -145,7 +145,7 @@ export default function WhyChooseUs() {
           viewport={{ once: true, amount: 0.2 }}
         >
           <motion.img
-            src="https://img.magnific.com/premium-photo/epoxy-resin-table-made-olive-wood-black-background-with-steel-bars-as-table-legs_343960-27893.jpg?ga=GA1.1.367325703.1777638219&semt=ais_hybrid&w=740&q=80"
+            src="/assets/images/WhyChooseImg.png"
             alt="room"
             className="w-full h-[420px] sm:h-[520px] md:h-[600px] object-cover"
             initial={{ scale: 1.1 }}
