@@ -15,11 +15,11 @@ const categories = [
     icon: "/assets/icons/furniture-icon-3.png",
   },
   {
-    name: "Tea Table",
+    name: "Storage Space",
     icon: "/assets/icons/furniture-icon-4.png",
   },
   {
-    name: "Storage Solutions",
+    name: "Tea Table",
     icon: "/assets/icons/furniture-icon-5.png",
   },
   {
