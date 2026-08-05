@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProductCard from "./ProductCard";
-import productData from "../data/ProductsData";
+import productData from "/src/data/ProductsData";
 
 
 
