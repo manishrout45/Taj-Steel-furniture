@@ -7,6 +7,7 @@ import FurnitureCategorySection from "../components/FurnitureCategorySection";
 import FurnitureHero from "../components/FurnitureHero";
 import MarqueeBar from "../components/MarqueeBar";
 import Testimonial from "../components/Testimonial";
+import Products from "../components/Products";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <AboutSection className="fade-right" />
       </section>
       <FurnitureCategorySection />
+      <Products />
 
       <section id="services">
         <ServicesSection />
