@@ -53,6 +53,22 @@ const productData = {
       price: 9000,
       image: "/assets/images/Products/TSF-513.jpg",
     },
+{
+  id: 65,
+  name: "Premium Leather Executive Chair",
+  description:
+    "Premium High Back Executive Chair With A Durable Leather Finish, Smooth Hydraulic Height Adjustment, Imported Armrests And Auto Tilting Mechanism For Enhanced Comfort.",
+  price: 11100,
+  image: "/assets/images/Products/TSF-509.jpg",
+},
+{
+  id: 66,
+  name: "Modern High Back Boss Chair",
+  description:
+    "Stylish High Back Boss Chair Featuring A Comfortable Padded Seat, Leather Finish, Hydraulic Lift, Imported Armrests And Smooth Auto Tilt Function For Everyday Office Use.",
+  price: 9000,
+  image: "/assets/images/Products/TSF-516.jpg",
+},
   ],
 
   "Executive Chair": [
@@ -104,6 +120,31 @@ const productData = {
       price: 11500,
       image: "/assets/images/Products/TSF-549.jpg",
     },
+{
+  id: 67,
+  name: "Classic High Back Executive Chair",
+  description:
+    "Elegant High Back Executive Chair Featuring A Sturdy Frame, Hydraulic Height Adjustment, Smooth Tilt Mechanism And Thick Cushioned Seat For Comfortable Long Hours Of Work.",
+  price: 10800,
+  image: "/assets/images/Products/TSF-543.jpg",
+},
+{
+  id: 68,
+  name: "Luxury Padded Office Chair",
+  description:
+    "Comfortable Padded Office Chair Designed With A High Backrest, Hydraulic Lift, Adjustable Tilt Function And Supportive Cushioning For Professional Workspaces.",
+  price: 10800,
+  image: "/assets/images/Products/TSF-545.jpg",
+},
+{
+  id: 69,
+  name: "Deluxe Manager Executive Chair",
+  description:
+    "Premium Manager Chair With A Spacious High Back Design, Smooth Hydraulic Height Adjustment, Adjustable Reclining Mechanism And Comfortable Padded Seating.",
+  price: 11400,
+  image: "/assets/images/Products/TSF-553.jpg",
+},
+
   ],
 
   "Mesh Chair": [
